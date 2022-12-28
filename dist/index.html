@@ -5,9 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="main.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>To-Do</title>
 </head>
 <body>
-    
+    <div id="content">
+        <div id="sidebar">
+            <div class="section home">
+                <button class="sidebar-button general selected">All</button>
+                <button class="sidebar-button today">Today</button>
+                <button class="sidebar-button upcoming">Upcoming</button>
+            </div>
+            <div class="section projects">
+                <div class="projects-header">
+                    <h3>Projects</h3>
+                    <button class="sidebar-button add-project">
+                        <span class="material-symbols-outlined">add_box</span>
+                    </button>
+                </div>
+                <button class="sidebar-button project" data-id="0">Sample</button>
+            </div>
+        </div>
+        <div class="list">
+            <div id="header">
+                <h1>To-Do</h1>
+            </div>
+            <div class="list-header">
+                <h2>General</h2>
+                <div id="add-todo-container">
+                    <button id="add-todo">
+                        <span class="material-symbols-outlined">add_box</span>
+                    </button>
+                </div>
+            </div>
+                <div class="todo completed">
+                    <button class="toggle-completion-status completed">
+                        <span class="material-symbols-outlined">check_box</span>
+                    </button>
+                    <span class="task">
+                        Do this
+                    </span>
+                    <span class="due-date"> 
+                        12/02/99
+                    </span>
+                    <button class="edit-button">
+                        <span class="material-symbols-outlined">edit</span>                            
+                    </button>
+                    <button class="delete-button">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+                <div class="todo">
+                    <button class="toggle-completion-status to-complete">
+                        <span class="material-symbols-outlined">check_box_outline_blank</span>
+                    </button>
+                    <span class="task">
+                        Also do this
+                    </span>
+                    <span class="due-date">
+                        15/07/99
+                    </span>
+                    <button class="edit-button">
+                        <span class="material-symbols-outlined">edit</span>                            
+                    </button>
+                    <button class="delete-button">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+        </div>
+    </div>
 </body>
 </html>
